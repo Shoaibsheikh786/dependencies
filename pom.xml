@@ -17,100 +17,100 @@
   </build>
   
   	<dependencies>
+
+		<!-- #Cucumber Dependencies -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.14.0</version>
+			<version>7.17.0</version>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>7.14.0</version>
+			<version>7.17.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-core</artifactId>
-			<version>7.14.0</version>
+			<version>7.17.0</version>
 		</dependency>
-		
+
+		<!-- Cucumber Dependencies -->
+
+		<!-- Selenium java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.12.1</version>
+			<version>4.20.0</version>
 		</dependency>
-
+		<!-- Selenium java -->
+		<!-- TestNg-->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.8.0</version>
+			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.uncommons</groupId>
-			<artifactId>reportng</artifactId>
-			<version>1.1.4</version>
-			<scope>test</scope>
-		</dependency>
+		<!-- TestNg-->
 
+		<!-- LOG4J-CORE , BETA VERSION-->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>2.20.0</version>
+			<version>3.0.0-beta2</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
-			<version>2.20.0</version>
+			<version>3.0.0-beta2</version>
 		</dependency>
+
+		<!-- LOG4J-CORE , BETA VERSION-->
+
+		<!-- WEBDRIVER MANAGER-->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.4.1</version>
+			<version>5.8.0</version>
 		</dependency>
-
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>2.0.7</version>
-			<scope>test</scope>
-		</dependency>
+		<!-- WEBDRIVER MANAGER-->
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-slf4j-impl</artifactId>
-			<version>2.20.0</version>
+			<version>3.0.0-beta2</version>
 			<scope>test</scope>
 		</dependency>
 
+
+		<!-- APACHE POI EXCEL -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>5.2.3</version>
+			<version>5.2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>5.2.3</version>
+			<version>5.2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>4.1.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
-			<version>5.1.1</version>
+			<version>5.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
-			<version>4.4</version>
+			<version>4.5.0-M1</version>
 		</dependency>
-
-
+		<!-- APACHE POI EXCEL -->
 	</dependencies>
 </project>
