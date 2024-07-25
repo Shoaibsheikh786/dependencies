@@ -1,40 +1,62 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>seatPlan</groupId>
-  <artifactId>SeatPlan</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.1</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
-  
-  	<dependencies>
+<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.3.1</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>
+								AB.xml
+							</suiteXmlFile>
+
+						</suiteXmlFiles>
+						<argLine>
+							-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+						</argLine>
+					</configuration>
+					<dependencies>
+						<dependency>
+							<groupId>org.aspectj</groupId>
+							<artifactId>aspectjweaver</artifactId>
+							<version>${aspectj.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<properties>
+		<aspectj.version>1.9.2</aspectj.version>
+	</properties>
+
+	<!-- Add the following options to your maven-surefire-plugin -->
+
+
+	<dependencies>
 
 		<!-- #Cucumber Dependencies -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.17.0</version>
+			<version>7.18.1</version>
 		</dependency>
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>7.17.0</version>
+			<version>7.18.1</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-core</artifactId>
-			<version>7.17.0</version>
+			<version>7.18.1</version>
 		</dependency>
+
 
 		<!-- Cucumber Dependencies -->
 
@@ -42,8 +64,9 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.20.0</version>
+			<version>4.23.0</version>
 		</dependency>
+
 		<!-- Selenium java -->
 		<!-- TestNg-->
 		<dependency>
@@ -73,8 +96,9 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.8.0</version>
+			<version>5.9.1</version>
 		</dependency>
+
 		<!-- WEBDRIVER MANAGER-->
 
 		<dependency>
@@ -89,28 +113,48 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>5.2.5</version>
+			<version>5.3.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>5.2.5</version>
+			<version>5.3.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>4.1.2</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
-			<version>5.2.0</version>
+			<version>5.2.1</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
 			<version>4.5.0-M1</version>
 		</dependency>
 		<!-- APACHE POI EXCEL -->
+
+		<!-- Allure Reporting-->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.28.0</version>
+		</dependency>
+		<!-- Allure Reporting-->
+
+		<!-- Java Faker lib for generating Random Data-->
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+		<!--java Faker-->
+
 	</dependencies>
-</project>
