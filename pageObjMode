@@ -1,0 +1,13 @@
+The Page Object Model (POM) is a design pattern in Selenium that represents web pages as objects in code. It's used to automate web applications by creating an abstraction layer between the application's user interface (UI) and the test automation code. 
+How it works
+Each web page is represented as a class 
+The elements on the page are defined as variables on the class 
+Testers can use these elements to perform operations on the website 
+Benefits
+Readability: POM makes automated tests more readable and maintainable 
+Code simplicity: POM helps write simple and easy-to-understand code 
+Test case maintenance: POM reduces code duplication and improves test case maintenance 
+Parallel execution: POM supports parallel execution of test cases, which can reduce test execution time 
+Challenges 
+Initial setup time: Creating page classes, defining locators, and writing methods can be time-consuming
+Increased complexity: Managing multiple classes and layers of abstraction can make the system harder to navigate
